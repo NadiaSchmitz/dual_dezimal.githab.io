@@ -4,9 +4,11 @@
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta charset="utf-8" />
-  <title>Dual Dezimal</title>
-  <link rel="stylesheet" href="style.css" type="text/css" />
-  <link rel="icon" href="favicon.png" type="image/x-icon">
+  <title>Rechner</title>
+  <link rel="stylesheet" href="./styles/style.css" type="text/css" />
+  <link rel="stylesheet" href="./styles/background.css" type="text/css" />
+  <link rel="stylesheet" href="./styles/popup.css" type="text/css" />
+  <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
@@ -17,21 +19,29 @@
   <section class="wrapper">
     <div class="inner_wrapper">
       <div>
-        <input type="number" name="dezimal" id="dezimal" placeholder="Dezimalzahl"/>
+        <input type="number" name="dezimal" id="dezimal" placeholder="Dezimalzahl max. 12 Zeichen"/>
+        <span id="dezimal_remove" class="remove"></span>
         <p id="dual"></p>
       </div>
     </div>
     
     <div class="inner_wrapper">
       <div>
-        <input type="number" name="dual_1" id="dual_1" placeholder="Dualzahl"/>
+        <input type="number" name="dual_1" id="dual_1" placeholder="Dualzahl max. 30 Zeichen"/>
+        <span id="dual_remove" class="remove"></span>
         <p id="dezimal_1"></p>
       </div>
     </div>
   </section>
-  
-  <script type="text/javascript" src="dualdezimal.js"></script>
-  <script type="text/javascript" src="dezimaldual.js"></script>
+  <div class="popup">
+    <div class="popup_content">
+      <span class="popup_close" onClick="PopUpHide()"></span>
+      <div class="popup_text"></div>
+    </div>
+  </div>
+  <script type="text/javascript" src="./js/dualdezimal.js"></script>
+  <script type="text/javascript" src="./js/dezimaldual.js"></script>
+  <script type="text/javascript" src="./js/popup.js"></script>
 </body>
 
 </html>

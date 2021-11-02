@@ -1,0 +1,82 @@
+body {
+  font-family: "Oswald", sans-serif;
+  font-size: 20px;
+  background-color: #000000;
+  background-position: 50%;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  width: 500px;
+  margin: 100px auto;
+}
+
+@media only screen and (max-width: 500px) {
+  .wrapper {
+    width: 300px;
+    margin: 30px auto;
+  }
+}
+
+.inner_wrapper {
+  height: 300px;
+  background: rgb(63, 81, 181);
+  background: -webkit-linear-gradient(bottom, rgb(45 10 106) 0%, rgba(9, 11, 22, 1) 100%);
+  background: -moz-linear-gradient(bottom, rgb(45 10 106) 0%, rgba(9, 11, 22, 1) 100%);
+  background: -o-linear-gradient(bottom, rgb(45 10 106) 0%, rgba(9, 11, 22, 1) 100%);
+  background: linear-gradient(to top, rgb(45 10 106) 0%, rgba(9, 11, 22, 1) 100%);
+  box-sizing: border-box;
+  padding: 70px;
+}
+
+@media only screen and (max-width: 500px) {
+  .inner_wrapper {
+    height: 260px;
+    padding: 70px 0 70px 0;
+  }
+}
+
+.inner_wrapper:nth-of-type(1) {
+  margin: 0 0 50px 0;
+}
+
+input {
+  width: 300px;
+  height: 30px;
+  font-family: "Oswald", sans-serif;
+  font-size: 20px;
+  text-align: center;
+  border: none;
+  border-radius: 3px;
+  outline: none;
+  margin: 0 auto 30px;
+  padding: 3px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: textfield;
+  background: #0a377e;
+  margin: 0;
+}
+
+#dual,
+#dezimal_1 {
+  height: 31px;
+  color: #ffffff;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.remove {
+  display: inline-block;
+  vertical-align: top;
+  width: 36px;
+  height: 36px;
+  background-size: contain;
+  background-position: 50%;
+  background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAABmJLR0QA/wD/AP+gvaeTAAAAzklEQVRIie3S0QqCMBTGce0Bs0Txwp69wMgKewOFfzcTlLaxc9Qg2ne7nfPj7CxJYmL+JkAJvIAbcBDUHYE70AGFFE1N4ZgeqALqKnN3TCeCTZMn83hxCwrw0MC5pZEVd6A9kIth07CwNByA0+RO6bhTq9AQfDN0grueMmgVS3Hb5NtMKsDF6E5op8ozfRwf6ePDrY1+/3M5Jh2A2rHz5ZP70MmddXEgC31KzyoyDXyV7M+BNxq4DUU9eKuBM6ABzpInM3UXU7sXwzExP5s3um/syN1W7JQAAAAASUVORK5CYII=');
+  margin: 0 0 10px auto;
+}
