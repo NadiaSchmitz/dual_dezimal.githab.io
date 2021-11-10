@@ -55,5 +55,6 @@
   -ms-transition: all .1s ease-in;
   -o-transition: all .1s ease-in;
   transition: all .1s ease-in;
+  cursor: pointer;
   margin: 0 0 10px auto;
 }
